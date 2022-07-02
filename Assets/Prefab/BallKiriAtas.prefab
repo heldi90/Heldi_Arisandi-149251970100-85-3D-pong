@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5380758458570456281}
   - component: {fileID: 5380758458570456278}
   - component: {fileID: 5380758458570456279}
+  - component: {fileID: 3153476484732430846}
   m_Layer: 0
   m_Name: BallKiriAtas
   m_TagString: Ball
@@ -105,14 +106,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5380758458570456276}
   serializedVersion: 2
-  m_Mass: 0.5
+  m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 2
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &5380758458570456279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,4 +127,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: 2, y: 2, z: -2.7}
+  Ball: {fileID: 5380758458570456276}
+  waktu: 15
   rb: {fileID: 0}
+--- !u!114 &3153476484732430846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5380758458570456276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e16bbd3947a2cc459303ac927d13c50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TagObject: hancur
+  tagBall: {fileID: 5380758458570456276}
+  TriggerEventEnter:
+    m_PersistentCalls:
+      m_Calls: []

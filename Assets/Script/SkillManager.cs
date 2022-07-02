@@ -52,23 +52,23 @@ public class SkillManager : MonoBehaviour
 
     }
 
-    public void SkillPaddle()
-    {
-        if (player.seranganPaddle1)
-        {
-            player.durasiSkillPaddle1 = 5;
-        }
+    // public void SkillPaddle()
+    // {
+    //     if (player.seranganPaddle1)
+    //     {
+    //         player.durasiSkillPaddle1 = 5;
+    //     }
 
-        if (player.seranganPaddle2)
-        {
-            player.durasiSkillPaddle2 = 5;
-        }
-
-
-
-        Destroy(skill2x);
+    //     if (player.seranganPaddle2)
+    //     {
+    //         player.durasiSkillPaddle2 = 5;
+    //     }
 
 
 
-    }
+    //     Destroy(skill2x);
+
+
+
+    // }
 }

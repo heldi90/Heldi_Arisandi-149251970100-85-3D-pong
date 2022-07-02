@@ -32,10 +32,14 @@ public class BallHancur : MonoBehaviour
 
         if (other.tag == TagObject)
         {
-            tagBall = GameObject.FindWithTag(TagObject);
+
 
             print("hancur");
             Destroy(tagBall);
+
+
+
+
 
 
 

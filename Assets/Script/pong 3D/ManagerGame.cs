@@ -124,7 +124,7 @@ public class ManagerGame : MonoBehaviour
 
     public void kencang()
     {
-        kecepatanPantulan = 2;
+        kecepatanPantulan = 0.2f;
         for (int i = 0; i < clone.Length; i++)
         {
 
@@ -132,14 +132,11 @@ public class ManagerGame : MonoBehaviour
 
 
 
-            if (kecepatanPantulan < 0)
-            {
-                bola[i].rb.velocity = bola[i].rb.velocity * 1.5f;
+
+            bola[i].rb.velocity = bola[i].rb.velocity * 4f;
 
 
 
-                print("kencang Aktif");
-            }
 
 
 
